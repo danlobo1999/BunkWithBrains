@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #373d3f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.registercontroller">
+   <children>
+      <TextField fx:id="reusername" alignment="CENTER" layoutX="337.0" layoutY="116.0" promptText="Enter Username">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="reregister" layoutX="248.0" layoutY="289.0" mnemonicParsing="false" onAction="#reRegister" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #43abc9;" text="Register">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="relogin" layoutX="450.0" layoutY="352.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reLogin" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #43abc9;" text="Proceed to Login" visible="false">
+         <font>
+            <Font name="Cambria Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="189.0" layoutY="26.0" text="REGISTER" textAlignment="CENTER" textFill="#f8fbfc">
+         <font>
+            <Font name="Cambria Bold" size="48.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="repassword" alignment="CENTER" layoutX="337.0" layoutY="172.0" promptText="Enter Password">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="reconpassword" alignment="CENTER" layoutX="337.0" layoutY="230.0" promptText="Confirm Password">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="restatus" alignment="CENTER" contentDisplay="CENTER" layoutX="163.0" layoutY="357.0" prefHeight="19.0" prefWidth="269.0" text="   " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="rehome" mnemonicParsing="false" onAction="#reHome" prefHeight="35.0" prefWidth="50.0" style="-fx-background-color: #43abc9;" text="🡸">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="rename" alignment="CENTER" layoutX="87.0" layoutY="116.0" promptText="Enter Name">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rerollno" alignment="CENTER" layoutX="87.0" layoutY="172.0" promptText="Enter Roll Number">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="repid" alignment="CENTER" layoutX="87.0" layoutY="230.0" promptText="Enter PID">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

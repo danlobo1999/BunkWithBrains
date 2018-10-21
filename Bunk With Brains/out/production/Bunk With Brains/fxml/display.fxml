@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #373d3f;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.displaycontroller">
+   <children>
+      <Label fx:id="displaylabel" layoutX="37.0" layoutY="75.0" text="Select a date to update the attendance for that day" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="displaydate" layoutX="214.0" layoutY="144.0" />
+      <Button fx:id="displaygo" layoutX="250.0" layoutY="200.0" mnemonicParsing="false" onAction="#displayGo" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #43abc9;" text="Go">
+         <font>
+            <Font name="Georgia Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="displaystatus" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="249.0" prefHeight="30.0" prefWidth="390.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="displayyes" layoutX="164.0" layoutY="341.0" mnemonicParsing="false" onAction="#disYes" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #43abc9;" text="Yes" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="displayno" layoutX="338.0" layoutY="341.0" mnemonicParsing="false" onAction="#disNo" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #43abc9;" text="No" visible="false">
+         <font>
+            <Font name="Georgia Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="displaylab" layoutX="135.0" layoutY="292.0" text="Would you like to change the attendance for this day?" textFill="#fcfcfc" visible="false">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="displayback" mnemonicParsing="false" onAction="#displayBack" prefHeight="35.0" prefWidth="50.0" style="-fx-background-color: #43abc9;" text="🡸">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
